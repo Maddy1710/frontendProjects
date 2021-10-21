@@ -1,2 +1,2 @@
-# frontendProjects
+# BounceMarioProjects
 HTML CSS JAVASCRIPT
