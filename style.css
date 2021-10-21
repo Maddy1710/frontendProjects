@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow: hidden;
+}
+.gamecontainer{
+    background-image: url(background.png);
+    background-size: 100vw 100vh;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.image{
+    position: absolute;
+    background-image: url(mario.png);
+    background-size: contain;
+    width: 15%;
+    height: 15%;
+    background-repeat: no-repeat;
+    left: 10%;
+    bottom: 15%;
+    /* animation: bounce 1s infinite alternate; */
+    
+}
+
+.dragon{
+    position: absolute;
+    background-image: url(dragon.png);
+    background-size: contain;
+    width: 15%;
+    height: 15%;
+    right: 1%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 15%;
+}
+
+.animateimage{
+    animation: mario 0.6s linear;
+}
+@keyframes mario {
+    0%{
+        bottom:15%;
+    }
+    50%{
+        bottom: 60%;
+    }
+    100%{
+        bottom:15%;
+    }
+}
+.dragonAni{
+    animation: dragon 5s linear infinite;
+}
+.gameOver{
+    position: absolute;
+    align-items: center;
+    width: 100vw;
+    top: 10%;
+    text-align: center;
+    color: rgb(49, 49, 49);
+    font-size: 40px;
+    font-family: monospace;
+    font-weight: bold;
+    visibility: hidden;
+}
+@keyframes dragon {
+    0%{
+        left:100vw;
+    }
+    100%{
+        left: -10vw;
+
+    }
+}
+#scoreCount{
+    padding: 30px;
+    font-family: monospace;
+    font-weight: bold;
+    text-align: right;
+    font-size: 20px;
+    color:rgb(34, 33, 33); 
+}
